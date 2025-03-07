@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="brand"><img src="./images/Spotify_icon.svg.png" alt="Brand" id="logo">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="left side-bar">
+
+        </div>
+
+        <div class="container-playlist">
+            <div class="currentSongs">
+                <h2 id="current-playlist-name"></h2>
+                <div class="songs">
+                    <div class="song">
+                        <div class="cover">
+                            <img src="" alt="" id="song-cover">
+                        </div>
+                        <div class="details">
+                            <p id="name"></p>
+                            <p id="composer"></p>
+                        </div>
+                        <div class="options">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <input type="range" name="range" id="myProgress" value="0" min="0">
+                <div class="icons">
+                    <span id="time">0:00</span>
+                    <i class="fa-solid fa-1x fa-backward" id="backword"></i>
+                    <i class="fa-solid fa-1x fa-play" id="play"></i>
+                    <i class="fa-solid fa-1x fa-forward" id="forward"></i>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right side-bar">
+
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="your-playlist">
+                <input type="text" name="playlist-name" id="playlist-name"><br>
+                <button type="button" id="create new playlist">Create</button>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
